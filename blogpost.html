@@ -1,25 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    <body>
-        
-        <h1>Moksh's blog</h1>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
 
-        <h3>Contents</h3>
-        <ul>
-            <li>First post!</li>
-        </ul>
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(255, 253, 253);
+  width:100%;
+  padding: 20px;
+overflow:auto;
+  height:75%;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   height: 400px;
+}
+
+/* Add a About Me card effect for articles */
+.aboutcard {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   height: 800px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  /*clear: both;*/
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .leftcolumn, .rightcolumn {   
+    width: 200%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Moksh's Blog</h2>
+</div>
+ <img src = "https://steamuserimages-a.akamaihd.net/ugc/939460955759074459/6AFE904E7BA1724EB0CE7EF9F237B75BC4893EDE/" alt = "hangouts blob emoji with sunglasses" width = 100>
+<img src = "https://emojis.slackmojis.com/emojis/images/1531847550/4232/blob-devil.gif?1531847550" alt = "blog devil emoji" width = "100">
+<img src = "https://emojis.slackmojis.com/emojis/images/1531847643/4237/blob-grin.gif?1531847643" alt = "the hangouts blob grin emoji" width = "100">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Playing Tennis at the tennis court</h2>
+      <div></div>
+      <p>Today I went to play tennis! It was SUPER fun and I enjoyed myself thoroughly! What was more was, our team won the game! Incase you don't know what tennis is, <a href = "https://www.google.com/search?q=information+on+tennis+sport&rlz=1C5CHFA_enUS844US844&oq=information+on+tennis+sport&aqs=chrome..69i57j33l6.5472j1j4&sourceid=chrome&ie=UTF-8">click here</a> to find more information on the sport <br>
+        <img src = "https://lh4.googleusercontent.com/-VtBOBcar6aY/U0Yp5vjPLPI/AAAAAAAAed8/ciexzMvgSUM/w960-h663/10.Sunglasses_960x663.gif" alt = "a hangouts sticker of an emoji in sunglasses" width = "300">
+        <img src = "https://comps.canstockphoto.com/two-happy-smiling-people-man-and-woman-vector-clip-art_csp49736515.jpg" alt = "people playing tennis" width="300">
         
-        <h2>First post</h2>
-        <img src="https://images.squarespace-cdn.com/content/v1/590bea2229687fec92f49dd4/1544180589352-2F0HMWFN1WX03493BSDC/ke17ZwdGBToddI8pDm48kDNmyC5FM8GiR4og3MgQa1x7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tb-hnCqoepq4X8c1traqO_JWRA3fEpTuA5K9wzrbyCcSebwWA2O1ajdB4h3_NxcMA/clock2.jpg?format=1500w" alt="Bucks Couny Image">
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something excited happened.</p>
-        
-        <a href="index.html">Go back to home page</a>
-        
-    </body>
+    </div>
+    <div class="card">
+      <h2>My First origami flasher!</h2>
+      <div ><img src = "https://lh3.googleusercontent.com/proxy/4SsZyHhhv9oc5dS9YtO1CxMdXUp9W5JAAx4mQ7e0Jm4-XGwsOj-g817l4cRSUC0Am4Z4RytmOt84CmFJ7sPm86fvPbVwnWUZLAzV6U1W" alt = "a flasher origami image" width = "200"></div>
+      <p>Today I made an origami flasher! It was so fun to make, and it turned out really well! A flasher is an origami creation where you can pull apart the paper, and close it in again! <a href = "https://www.google.com/search?q=what+is+an+origami+flasher&rlz=1C5CHFA_enUS844US844&oq=what+is+an+origami+flasher&aqs=chrome..69i57j0l7.2559j1j4&sourceid=chrome&ie=UTF-8">Click Here</a> to find more information on a flasher.</p>
+    </div>
+    <img src = "https://i.pinimg.com/originals/4c/03/6b/4c036b7eff74f1b4ccc41b34e9c39349.gif" alt = "a google hangouts sticker" width = "300">
+  </div>
+  
+    <div class="rightcolumn">
+        <div class="aboutcard">
+            <h2>About Me</h2>
+            <div class="fakeimg">
+                <img src = "moksh.jpg" alt = "my photo" height = "400">
+                <p>I am eleven years old. <br>
+                    I live in Draper, Utah.<br>
+                    I go to APA<br>
+
+                    <img src = "https://static.wixstatic.com/media/a29fb5_5fdc7e609ccb4fe38d2260677c4bd135.gif"alt = "a happy leprecahn" width = "200">
+                </p>
+            </div>
+
+        </div>
+    </div>
+<div class="footer">
+  <h2></h2>
+</div>
+
+</body>
 </html>
