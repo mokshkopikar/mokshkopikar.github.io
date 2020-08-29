@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url(yummy-food.jpeg);
+  min-height: 75%;
+}
+
+#myVideo {
+  background-position: center;
+  background-size: cover;
+  /*background-image: url(yummy-food.jpeg);*/
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+.the-cafe{
+    font-family:Comic Sans MS;
+    color:white;
+}
+h1 {
+    font-family:Comic Sans MS;
+}
+p{
+    font-family:monospace;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="w3-display-container w3-grayscale-min" id="home">
+  <video autoplay muted loop id="myVideo">
+     <source src="rain.mp4" type="video/mp4">
+  </video>
+
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="the-cafe" style="font-size:90px">Moksh's<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p> Welcome to my resteraunt! If you are looking for a good place to eat, congratulations! You've found the right place! In this resteraunt, I serve different cuisines not just one. There is Indian food, Chinese food, and Italian food. Those are my three favorite cuisines and I am sure you too will love it.</p>
+    <p>If you want more information about the menu, switch to the "menu" tab down below. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p>Chef, Coffeeist and Owner: Moksh Kopikar</p>
+      <img src="https://lh4.googleusercontent.com/-EjN52T2IoGM/AAAAAAAAAAI/AAAAAAAAH_A/ZhWgIM5VW-wajwWVcHs2dufzwKKUqoT9gCLcDEAE/s64-c-k-no-mo/photo.jpg" alt="my picture" width="200">
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 13272 Cherry Crest Drive, Draper Utah. ** This is where I  live! The cafe is at my house!!**. For more information about this, switch to the Where tab. </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+    <h1>INDIAN CUSINE</h1>
+      <h5>Panner Tikka Masala</h5>
+      <p class="w3-text-grey">Paneer tikka masala is an Indian dish of marinated paneer cheese served in a spiced gravy. It is a vegetarian alternative to chicken tikka masala <br>
+        serving size : 1 pot
+        <br>Price: $5.50</p><br>
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2008/02/palak_paneer_recipe.jpg" alt="an image of some delicious palak paneer" width="200">
+    
+      <h5>Garlic Naan</h5>
+      <p class="w3-text-grey">Naan is a leavened, oven-baked flatbread found in the cuisines mainly of Western Asia, South Asia, Indonesia, Myanmar and the Caribbean. Contents.<br>
+        serving size:five Naans<br>
+        Price: $2.00</p><br>
+        <img src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2012/11/garlic-naan-recipe-1.jpg" alt="delicious garlic naan" width="200">
+    
+      <h5>Mutton Biryani (This is a non-vegetarian dish!)</h5>
+      <p class="w3-text-grey">Mutton Biriyani is a dish fairly common in North Indian, South Indian and Pakistani and Turkish cuisine that incorporates mutton into a rice pilaf. The rice used is almost invariably Basmati or a close variant.<br>
+        Serving Size : 1 dish<br>
+        Price : $8.00</p><br>
+        <img src="https://www.swatifood.com/wp-content/uploads/2018/01/Authentic-Hyderabadi-mutton-biryani-recipe.jpg" alt="mutton biryani" width="200">
+    <h1>ITALIAN CUSINE</h1>
+      <h5>Pasta Puttenesca</h5>
+      <p class="w3-text-grey">Spaghetti alla puttanesca is an Italian pasta dish invented in Naples in the mid-20th century. Its ingredients typically include tomatoes, olive oil, olives, capers and garlic, in addition to pasta.<br>
+        Serving Size : one dish <br>
+        Price:$7.50</p><br>
+    <img src="https://www.sprinklesandsprouts.com/wp-content/uploads/2020/01/Spaghetti-alla-Puttanesca-Pasta-Puttanesca-SQ.jpg" alt="pasta puttenesca" width="200">
+      <h5>Margerhita Pizza</h5>
+      <p class="w3-text-grey">Pizza Margherita is a typical Neapolitan pizza, made with San Marzano tomatoes, mozzarella cheese, fresh basil, salt and extra-virgin olive oil. Traditionally, it is made with fior di latte rather than buffalo mozzarella.<br>
+        serving size: mini pizza, 5 slices <br>
+        Price : $3.00</p>
+<img src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2011/1/6/0/CCEV103_Margherita-Pizza_s4x3.jpg.rend.hgtvcom.826.620.suffix/1416867304309.jpeg" alt="margherita pizza" width="200">
+    <h5>Ravioli</h5>
+    <p class="w3-text-grey">Ravioli are a type of pasta comprising a filling enveloped in thin pasta dough. Usually served in broth or with a sauce, they originated as a traditional food in Italian cuisine. Ravioli are commonly square, though other forms are also used, including circular and semi-circular<br>
+        serving size: 1 dish <br>
+        Price : $9.00</p>
+<img src="https://i0.wp.com/www.missinthekitchen.com/wp-content/uploads/2019/09/Ravioli-Sauce-Recipe-H-scaled.jpg?fit=5643%2C3762&ssl=1" alt="an image of ravioli" width=200>
+        <h1>CHINESE CUSINE</h1>
+        <h5>Chow Mein</h5>
+        <p class="w3-text-grey">Chow mein are Chinese stir-fried noodles with vegetables and sometimes meat or tofu; the name is a romanization of the Taishanese chāu-mèn. The dish is popular throughout the Chinese diaspora and appears on the menus of most Chinese restaurants abroad. It is particularly popular in India, Nepal, the UK, and the US.<br>
+          serving size : 1 plateful
+          <br>Price: $6.00</p><br>
+      <img src="https://1.bp.blogspot.com/-ywh6XW0zesI/XQIQwEi_7eI/AAAAAAAAJ3s/B6yqFShpJ9YzvQemr8_p8y-uHQPAaNjEACLcBGAs/s1600/homemade%2Bchow%2Bmein%2Bnoodle%2B.jpg" alt="chow mein image" width="200">
+        <h5>Spring rolls</h5>
+        <p class="w3-text-grey">Spring rolls are a large variety of filled, rolled appetizers or dim sum found in East Asian, South Asian, Middle Eastern and Southeast Asian cuisine. The name is a literal translation of the Chinese chūn juǎn.<br>
+          serving size: Five Spring Rolls<br>
+          Price: $3.00</p><br>
+      <img src="https://www.nestle-family.com/sites/site.prod1.nestle-family.com/files/2019-11/15951---Vegetable-Spring-Rolls.jpg" alt="spring rolls image"  width="200">
+        <h5>Dim Sum</h5>
+        <p class="w3-text-grey">Dim sum is a Chinese cuisine of bite-sized portions served in small steamer baskets or on plates. Dim sum is generally considered Cantonese, though other varieties exist. In Cantonese tradition, dishes are usually served with tea.<br>
+          Serving Size : 1 dish<br>
+          Price : $4.00</p><br>
+          <img src="https://media.timeout.com/images/103708796/630/472/image.jpg" alt="an image of dim sum (momo)" width="200">
+    </div>
+
+    <div id="Drink" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p> Incase you are wondering on where you can find the location of my resteraunt, it is at the adress 13272 Cherry Crest Drive, Draper Utah. This is actually where I live so what I do is I tell people to order online, and then when I make the food, I will give you a call and you can come pick up your order. This is also a good way of placing your order online beacuse of all these COVID happenings that's going on these days. If you come to my house, you will find the food that you ordered on the door step and you can pick up your order there :D</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

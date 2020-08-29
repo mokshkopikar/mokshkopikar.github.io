@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+    </head>
+    <body>
+        
+        <h1>Moksh's blog</h1>
+
+        <h3>Contents</h3>
+        <ul>
+            <li>First Post</li>
+            <li>Second Post</li>
+            <li>third post</li>
+        </ul>
+        
+        <h2>First post</h2>
+        <h6>Posted on some date in some year</h6>
+        
+        <p>Today I went to the movies! It was so fun!<br>
+            Today I went shopping!<br>
+            I went to the  movies!
+        </p>
+        
+        <p>Today I went to play tennis!<br>
+            I had the time of my life!<br>
+            And our team won the game!!
+            
+        </p>
+        
+        
+    </body>
+</html>
